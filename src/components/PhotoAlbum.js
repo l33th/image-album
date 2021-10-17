@@ -15,8 +15,17 @@ import {
 import PhotoCamera from "@mui/icons-material/PhotoCamera";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
+import { makeStyles } from "@mui/styles";
+
+const useStyles = makeStyles((theme) => ({
+	container: {
+		backgroundColor: '#ede4e463',
+        padding: '8 0 6px',
+	},
+}));
 
 const PhotoAlbum = () => {
+	const classes = useStyles();
 	return (
 		<>
 			<CssBaseline />
@@ -26,7 +35,7 @@ const PhotoAlbum = () => {
 					<Typography variant='h6'>Photo Album</Typography>
 				</Toolbar>
 			</AppBar>
-			<div>
+			<div className={classes.container}>
 				<main>
 					<div>
 						<Container maxWidth='sm'>
@@ -61,7 +70,7 @@ const PhotoAlbum = () => {
 											color='primary'
 										>
 											See my photos
-										</Button>
+										</Button>{" "}
 										<Button
 											variant='outlined'
 											color='primary'
