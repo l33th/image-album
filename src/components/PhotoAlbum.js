@@ -65,7 +65,7 @@ const PhotoAlbum = () => {
 											color='primary'
 										>
 											See my photos
-										</Button>
+										</Button>{" "}
 										<Button
 											variant='outlined'
 											color='primary'
