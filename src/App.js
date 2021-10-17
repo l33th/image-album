@@ -34,6 +34,21 @@ const App = () => {
 						>
 							Photo Album
 						</Typography>
+						<Typography
+							varian='h5'
+							align='center'
+							color='textSecondary'
+							paragraph
+						>
+							<strong>
+								Lorem ipsum dolor sit amet consectetur,
+								adipisicing elit. Dolor omnis deleniti minima
+								saepe blanditiis tempora, dicta error mollitia
+								quas quaerat voluptatum eaque consequatur
+								distinctio suscipit assumenda velit tempore?
+								Excepturi, cum.
+							</strong>
+						</Typography>
 					</Container>
 				</div>
 			</main>
