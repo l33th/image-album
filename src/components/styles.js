@@ -6,6 +6,12 @@ const useStyles = makeStyles((theme) => ({
 		backgroundColor: '#ede4e463',
         padding: '8 0 6px',
 	},
+    icon: {
+        marginRight: '20px',
+    },
+    buttons: {
+        marginTop: '40px',
+    }
 }));
 
 export default useStyles;
