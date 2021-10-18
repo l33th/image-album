@@ -17,6 +17,8 @@ import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import useStyles from "./styles";
 
+const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
 const PhotoAlbum = () => {
 	const classes = useStyles();
 	return (
@@ -85,32 +87,34 @@ const PhotoAlbum = () => {
 			</div>
 			<Container className={classes.cardGrid} maxWidth='md'>
 				<Grid container spacing={0}>
-					<Grid itme>
-						<Card className={classes.card}>
-							<CardMedia
-								className={classes.cardMedia}
-								image='https://source.unsplash.com/random'
-								title='Image Title'
-							/>
-							<CardContent className={classes.CardContent}>
-								<Typography gutterBottom variant='h5'>
-									Heading
-								</Typography>
-								<Typography>
-									Lorem ipsum dolor sit, amet consectetur
-									adipisicing elit. Debitis, error!
-								</Typography>
-							</CardContent>
-							<CardActions>
-								<Button size='small' color='primary'>
-									view
-								</Button>
-								<Button size='small' color='primary'>
-									edit
-								</Button>
-							</CardActions>
-						</Card>
-					</Grid>
+					{cards.map(() => (
+						<Grid itme>
+							<Card className={classes.card}>
+								<CardMedia
+									className={classes.cardMedia}
+									image='https://source.unsplash.com/random'
+									title='Image Title'
+								/>
+								<CardContent className={classes.CardContent}>
+									<Typography gutterBottom variant='h5'>
+										Heading
+									</Typography>
+									<Typography>
+										Lorem ipsum dolor sit, amet consectetur
+										adipisicing elit. Debitis, error!
+									</Typography>
+								</CardContent>
+								<CardActions>
+									<Button size='small' color='primary'>
+										view
+									</Button>
+									<Button size='small' color='primary'>
+										edit
+									</Button>
+								</CardActions>
+							</Card>
+						</Grid>
+					))}
 				</Grid>
 			</Container>
 		</>
