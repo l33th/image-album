@@ -101,6 +101,14 @@ const PhotoAlbum = () => {
 									adipisicing elit. Debitis, error!
 								</Typography>
 							</CardContent>
+							<CardActions>
+								<Button size='small' color='primary'>
+									view
+								</Button>
+								<Button size='small' color='primary'>
+									edit
+								</Button>
+							</CardActions>
 						</Card>
 					</Grid>
 				</Grid>
