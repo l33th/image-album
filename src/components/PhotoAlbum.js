@@ -10,7 +10,7 @@ import {
 	Grid,
 	Toolbar,
 	Container,
-} from "@material-ui/core";
+} from "@mui/material";
 
 import PhotoCamera from "@mui/icons-material/PhotoCamera";
 import Button from "@mui/material/Button";
@@ -30,9 +30,9 @@ const PhotoAlbum = () => {
 					</Typography>
 				</Toolbar>
 			</AppBar>
-			<div className={classes.container}>
+			<div>
 				<main>
-					<div>
+					<div className={classes.container}>
 						<Container maxWidth='sm'>
 							<Typography
 								variant='h2'
@@ -57,8 +57,8 @@ const PhotoAlbum = () => {
 									velit tempore? Excepturi, cum.
 								</strong>
 							</Typography>
-							<div>
-								<Grid container spacing={2} justify='center'>
+							<div className={classes.button}>
+								<Grid container spacing={2} justifyContent='center'>
 									<Grid item>
 										<Button
 											variant='contained'
@@ -70,7 +70,7 @@ const PhotoAlbum = () => {
 											variant='outlined'
 											color='primary'
 										>
-											Secondary action
+											See my videos
 										</Button>
 									</Grid>
 								</Grid>

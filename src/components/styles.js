@@ -8,13 +8,4 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-
-const styles = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
-
-export default styles
+export default useStyles;
