@@ -57,7 +57,7 @@ const PhotoAlbum = () => {
 									velit tempore? Excepturi, cum.
 								</strong>
 							</Typography>
-							<div className={classes.button}>
+							<div className={classes.buttons}>
 								<Grid
 									container
 									spacing={2}
@@ -89,7 +89,7 @@ const PhotoAlbum = () => {
 						<Card className={classes.card}>
 							<CardMedia
 								className={classes.cardMedia}
-								image='https://unsplash.com/random'
+								image='https://source.unsplash.com/random'
 								title='Image Title'
 							/>
 							<CardContent className={classes.CardContent}>
