@@ -58,7 +58,11 @@ const PhotoAlbum = () => {
 								</strong>
 							</Typography>
 							<div className={classes.button}>
-								<Grid container spacing={2} justifyContent='center'>
+								<Grid
+									container
+									spacing={2}
+									justifyContent='center'
+								>
 									<Grid item>
 										<Button
 											variant='contained'
@@ -79,6 +83,28 @@ const PhotoAlbum = () => {
 					</div>
 				</main>
 			</div>
+			<Container className={classes.cardGrid} maxWidth='md'>
+				<Grid container spacing={0}>
+					<Grid itme>
+						<Card className={classes.card}>
+							<CardMedia
+								className={classes.cardMedia}
+								image='https://unsplash.com/random'
+								title='Image Title'
+							/>
+							<CardContent className={classes.CardContent}>
+								<Typography gutterBottom variant='h5'>
+									Heading
+								</Typography>
+								<Typography>
+									Lorem ipsum dolor sit, amet consectetur
+									adipisicing elit. Debitis, error!
+								</Typography>
+							</CardContent>
+						</Card>
+					</Grid>
+				</Grid>
+			</Container>
 		</>
 	);
 };
